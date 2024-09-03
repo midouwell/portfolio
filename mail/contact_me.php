@@ -35,7 +35,8 @@ try {
     $mail->Host = 'smtp.mail.yahoo.com'; // Yahoo SMTP server
     $mail->SMTPAuth = true; // Enable SMTP authentication
     $mail->Username = 'midouwell21@yahoo.fr'; // Yahoo email address
-    $mail->Password = 'gpghbknyhksimkik'; // Yahoo email password
+    //$mail->Password = 'gpghbknyhksimkik'; // Yahoo email password
+    $mail->Password = getenv('SMTP_PASSWORD');
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Use SSL encryption
     $mail->Port = 465; // SMTP port for Yahoo
 
