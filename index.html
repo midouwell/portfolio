@@ -24,6 +24,18 @@
     text-align: justify;
     font-family: 'Arial', sans-serif;
     font-size: 18px;
+
+   
+    }
+     /* falashing contact */
+     .flashing-red {
+        color: red;
+        animation: flash 1s infinite;
+    }
+
+    @keyframes flash {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
     }
   </style>
 
@@ -631,9 +643,11 @@
   </section>
 
   <!-- Contact Section -->
-  <!-- <section class="page-section bg-secondary" id="contact">
+  <section class="page-section bg-secondary" id="contact">
     <div class="container">
-
+      <h2 class="page-section-heading text-center mb-0 flashing-red" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); padding: 15px; font-family: 'Arial', sans-serif;">
+        Contact Section Pas encore implémenté
+    </h2>
       <h2 class="page-section-heading text-center mb-0" style="color: #1abc9c; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); padding: 15px; font-family: 'Arial', sans-serif;">
         Contactez-moi
       </h2>
@@ -651,7 +665,7 @@
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Name</label>
                 <input class="form-control" id="name" type="text" placeholder="Name" required="required"
-                  data-validation-required-message="Please enter your name.">
+                  data-validation-required-message="Please enter your name." disabled>
                 <p class="help-block text-danger"></p>
               </div>
             </div>
@@ -659,7 +673,7 @@
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Email Address</label>
                 <input class="form-control" id="email" type="email" placeholder="Email Address" required="required"
-                  data-validation-required-message="Please enter your email address.">
+                  data-validation-required-message="Please enter your email address." disabled>
                 <p class="help-block text-danger"></p>
               </div>
             </div>
@@ -667,7 +681,7 @@
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Phone Number</label>
                 <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required"
-                  data-validation-required-message="Please enter your phone number.">
+                  data-validation-required-message="Please enter your phone number." disabled>
                 <p class="help-block text-danger"></p>
               </div>
             </div>
@@ -675,21 +689,21 @@
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Message</label>
                 <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required"
-                  data-validation-required-message="Please enter a message."></textarea>
+                  data-validation-required-message="Please enter a message." disabled></textarea>
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <br>
             <div id="success"></div>
             <div class="form-group">
-              <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
+              <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton" disabled>Send</button>
             </div>
           </form>
         </div>
       </div>
 
     </div>
-  </section> -->
+  </section>
 
   <!-- <footer class="footer text-center">
     <div class="container">
