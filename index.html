@@ -21,30 +21,44 @@
 
   <style>
     .justified-text {
-    text-align: justify;
-    font-family: 'Arial', sans-serif;
-    font-size: 18px;
+      text-align: justify;
+      font-family: 'Arial', sans-serif;
+      font-size: 18px;
 
-   
+
     }
-     .flashing-red {
-        color: red;
-        animation: flash 1s infinite;
+
+    .flashing-red {
+      color: red;
+      animation: flash 1s infinite;
     }
 
     @keyframes flash {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0; }
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
     }
 
     .section-title {
-    font-family: 'Roboto', sans-serif; /* Use the Google Font */
-    font-size: 2rem; /* Adjust the font size */
-    margin-bottom: 1rem; /* Space below the title */
-    color: #f2e9e9; /* Color of the title */
-    font-weight: bold; /* Make the title bold */
-    text-align: center; /* Center-align the title */
-}
+      font-family: 'Roboto', sans-serif;
+      /* Use the Google Font */
+      font-size: 2rem;
+      /* Adjust the font size */
+      margin-bottom: 1rem;
+      /* Space below the title */
+      color: #f2e9e9;
+      /* Color of the title */
+      font-weight: bold;
+      /* Make the title bold */
+      text-align: center;
+      /* Center-align the title */
+    }
   </style>
 
 </head>
@@ -56,7 +70,7 @@
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <img src="img/portfolio/portfolio_icon.png" alt="Accueil" style="height: 50px;">
-    </a>
+      </a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
         type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -69,7 +83,10 @@
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">A propos</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#experieces">Experieces</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#projects">Projects</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
@@ -124,11 +141,8 @@
   <!-- About Section -->
   <section class="page-section bg-secondary text-white mb-0" id="about">
     <div class="container">
-
-      <!-- About Section Heading -->
-      <!-- <h2 class="page-section-heading bg-secondary text-center text-uppercase text-white">About</h2> -->
-
-      <h2 class="page-section-heading text-center mb-0" style="color: #1abc9c; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); padding: 15px; font-family: 'Arial', sans-serif;">
+      <h2 class="page-section-heading text-center mb-0"
+        style="color: #1abc9c; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); padding: 15px; font-family: 'Arial', sans-serif;">
         A propos
       </h2>
 
@@ -143,10 +157,17 @@
 
       <!-- About Section Content -->
       <div class="row">
-        <div class="col-lg-8 mx-auto">
+        <div class="col-lg-12 mx-auto">
           <h2 class="section-title">Mon Experience en Développement Web</h2>
           <p class="lead justified-text">
-            _En tant que développeur Full Stack, j'ai participé à de nombreux projets de développement web, de la conception à la mise en production. Maîtrisant les langages de programmation et les Framework nécessaires pour la création d'applications modernes et performantes. Mon expérience dans le développement front-end m'a permis de créer des interfaces utilisateur conviviales et réactives en utilisant des technologies telles que Vue.js et Angular. J'ai une excellente connaissance des standards du web et des bonnes pratiques en matière de conception et de développement web. Par ailleurs, mon expertise dans les technologies back-end telles que Java avec Spring Boot, Php avec Laravel, et Asp.net Core m'a permis de développer des API robustes et sécurisées, ainsi que de gérer efficacement les bases de données telles que Sql Server et MySql.
+            _ En tant que développeur Full Stack, j'ai participé à de nombreux projets de développement web, de la
+            conception à la mise en production. Maîtrisant les langages de programmation et les Framework nécessaires
+            pour la création d'applications modernes et performantes. Mon expérience dans le développement front-end m'a
+            permis de créer des interfaces utilisateur conviviales et réactives en utilisant des technologies telles que
+            Vue.js et Angular. J'ai une excellente connaissance des standards du web et des bonnes pratiques en matière
+            de conception et de développement web. Par ailleurs, mon expertise dans les technologies back-end telles que
+            Java avec Spring Boot, Php avec Laravel, et Asp.net Core m'a permis de développer des API robustes et
+            sécurisées, ainsi que de gérer efficacement les bases de données telles que Sql Server et MySql.
           </p>
         </div>
       </div>
@@ -155,27 +176,17 @@
         <div class="col-lg-8 mx-auto">
           <h2 class="section-title">Diplomes</h2>
           <p class="lead justified-text">
-           _ A.E.C. Programmation en orientée objet et technologies Web
+            _ A.E.C. Programmation en orientée objet et technologies Web
             Collège de Rosemont, Montréal
           </p>
           <p class="lead justified-text">
             _ A.E.C Réseaux de télécommunication internet
             Cégep de Saint-Laurent, Montréal
-           </p>
+          </p>
         </div>
       </div>
-      
-
-
-
-      <!-- About Section Button -->
-      <!-- Link to download PDF -->
       <div>
-        <!-- <a href="documents/CV__Ahmed_mechtouf.pdf" download="CV__Ahmed_mechtouf.pdf">Download PDF</a> -->
-        <!-- <a href="pdf_documents/CV__Ahmed_mechtouf.pdf" download="CV__Ahmed_mechtouf.pdf">Download the pdf</a> -->
-
       </div>
-
       <div class="text-center mt-4">
         <a class="btn btn-xl btn-outline-light" href="pdf_documents/Ahmed_Mechtouf_CV.pdf"
           download="Ahmed_Mechtouf_CV.pdf">
@@ -200,19 +211,16 @@
         </div>
         <div class="divider-custom-line"></div>
       </div>
-
     </div>
   </section>
 
   <!-- Portfolio Section -->
-  <section class="page-section portfolio bg-secondary" id="portfolio">
+  <section class="page-section portfolio bg-secondary" id="experieces">
     <div class="container">
 
-      <!-- Portfolio Section Heading -->
-      <!-- <h2 class="page-section-heading text-center mb-0 text-white">Langage de Programmation Frontend</h2> -->
-
-      <h2 class="page-section-heading text-center mb-0" style="color: #1abc9c; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); padding: 15px; font-family: 'Arial', sans-serif;">
-        Langage de Programmation Frontend
+      <h2 class="page-section-heading text-center mb-0"
+        style="color: #1abc9c; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); padding: 15px; font-family: 'Arial', sans-serif;">
+        Experieces
       </h2>
 
       <!-- Icon Divider -->
@@ -223,6 +231,14 @@
         </div>
         <div class="divider-custom-line"></div>
       </div>
+
+      <!-- Portfolio Section Heading -->
+      <!-- <h2 class="page-section-heading text-center mb-0 text-white">Langage de Programmation Frontend</h2> -->
+
+      <h2 class="page-section-heading text-center mb-0"
+        style="color: #1abc9c; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); padding: 15px; font-family: 'Arial', sans-serif;">
+        Langage de Programmation Frontend
+      </h2>
 
       <!-- Icon Divider -->
       <div class="divider-custom">
@@ -293,24 +309,16 @@
   </section>
 
   <!-- Portfolio Section -->
-  <section class="page-section portfolio bg-secondary" id="portfolio">
+  <section class="page-section portfolio bg-secondary" id="experieces">
     <div class="container">
 
       <!-- Portfolio Section Heading -->
       <!-- <h2 class="page-section-heading text-center mb-0 text-white">Framework Frontend</h2> -->
 
-      <h2 class="page-section-heading text-center mb-0" style="color: #1abc9c; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); padding: 15px; font-family: 'Arial', sans-serif;">
+      <h2 class="page-section-heading text-center mb-0"
+        style="color: #1abc9c; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); padding: 15px; font-family: 'Arial', sans-serif;">
         Framework Frontend
       </h2>
-
-      <!-- Icon Divider -->
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
 
       <!-- Icon Divider -->
       <div class="divider-custom">
@@ -356,24 +364,16 @@
   </section>
 
   <!-- Portfolio Section -->
-  <section class="page-section portfolio bg-secondary" id="portfolio">
+  <section class="page-section portfolio bg-secondary" id="experieces">
     <div class="container">
 
       <!-- Portfolio Section Heading -->
       <!-- <h2 class="page-section-heading text-center mb-0 text-white">Langage de Programmation Backend</h2> -->
 
-      <h2 class="page-section-heading text-center mb-0" style="color: #1abc9c; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); padding: 15px; font-family: 'Arial', sans-serif;">
+      <h2 class="page-section-heading text-center mb-0"
+        style="color: #1abc9c; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); padding: 15px; font-family: 'Arial', sans-serif;">
         Langage de Programmation Backend
       </h2>
-
-      <!-- Icon Divider -->
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
 
       <!-- Icon Divider -->
       <div class="divider-custom">
@@ -410,17 +410,17 @@
             <img class="img-fluid" src="img/portfolio/php.png" alt="">
           </div>
         </div>
-          <!-- Portfolio Item 4 -->
-       <div class="col-md-6 col-lg-4">
-        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal18">
-          <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-            <div class="portfolio-item-caption-content text-center text-white">
-              <!-- <i class="fas fa-plus fa-3x"></i> -->
+        <!-- Portfolio Item 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal18">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <!-- <i class="fas fa-plus fa-3x"></i> -->
+              </div>
             </div>
+            <img class="img-fluid" src="img/portfolio/csharp.png" alt="">
           </div>
-          <img class="img-fluid" src="img/portfolio/csharp.png" alt="">
         </div>
-      </div>
       </div>
     </div>
     </div>
@@ -431,33 +431,25 @@
   </section>
 
   <!-- Portfolio Section -->
-  <section class="page-section portfolio bg-secondary" id="portfolio">
+  <section class="page-section portfolio bg-secondary" id="experieces">
     <div class="container">
 
       <!-- Portfolio Section Heading -->
       <!-- <h2 class="page-section-heading text-center mb-0 text-white">Framework Backend</h2> -->
 
-      <h2 class="page-section-heading text-center mb-0" style="color: #1abc9c; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); padding: 15px; font-family: 'Arial', sans-serif;">
+      <h2 class="page-section-heading text-center mb-0"
+        style="color: #1abc9c; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); padding: 15px; font-family: 'Arial', sans-serif;">
         Framework Backend
       </h2>
 
-      <!-- Icon Divider -->
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="divider-custom-line"></div>
+     <!-- Icon Divider -->
+     <div class="divider-custom">
+      <div class="divider-custom-line"></div>
+      <div class="divider-custom-icon">
+        <i class="fas fa-star"></i>
       </div>
-
-      <!-- Icon Divider -->
-      <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
+      <div class="divider-custom-line"></div>
+    </div>
 
       <!-- Portfolio Grid Items -->
       <div class="row justify-content-center">
@@ -485,17 +477,17 @@
             <img class="img-fluid" src="img/portfolio/spring.jpg" alt="">
           </div>
         </div>
-          <!-- Portfolio Item 4 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal17">
-              <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                <div class="portfolio-item-caption-content text-center text-white">
-                  <!-- <i class="fas fa-plus fa-3x"></i> -->
-                </div>
+        <!-- Portfolio Item 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal17">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <!-- <i class="fas fa-plus fa-3x"></i> -->
               </div>
-              <img class="img-fluid" src="img/portfolio/asp.png" alt="">
             </div>
+            <img class="img-fluid" src="img/portfolio/asp.png" alt="">
           </div>
+        </div>
       </div>
     </div>
 
@@ -504,24 +496,16 @@
     </div>
   </section>
 
-  <section class="page-section portfolio bg-secondary" id="portfolio">
+  <section class="page-section portfolio bg-secondary" id="experieces">
     <div class="container">
 
       <!-- Portfolio Section Heading -->
       <!-- <h2 class="page-section-heading text-center mb-0 text-white">Framework Backend</h2> -->
 
-      <h2 class="page-section-heading text-center mb-0" style="color: #1abc9c; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); padding: 15px; font-family: 'Arial', sans-serif;">
+      <h2 class="page-section-heading text-center mb-0"
+        style="color: #1abc9c; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); padding: 15px; font-family: 'Arial', sans-serif;">
         Base de données
       </h2>
-
-      <!-- Icon Divider -->
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
 
       <!-- Icon Divider -->
       <div class="divider-custom">
@@ -567,33 +551,25 @@
   </section>
 
   <!-- Portfolio 2 Section -->
-  <section class="page-section portfolio bg-secondary" id="portfolio">
+  <section class="page-section portfolio bg-secondary" id="experieces">
     <div class="container">
 
       <!-- Portfolio Section Heading -->
       <!-- <h2 class="page-section-heading text-center mb-0 text-white">Outils</h2> -->
 
-      <h2 class="page-section-heading text-center mb-0" style="color: #1abc9c; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); padding: 15px; font-family: 'Arial', sans-serif;">
+      <h2 class="page-section-heading text-center mb-0"
+        style="color: #1abc9c; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); padding: 15px; font-family: 'Arial', sans-serif;">
         Outils
       </h2>
 
-      <!-- Icon Divider -->
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="divider-custom-line"></div>
+     <!-- Icon Divider -->
+     <div class="divider-custom">
+      <div class="divider-custom-line"></div>
+      <div class="divider-custom-icon">
+        <i class="fas fa-star"></i>
       </div>
-
-      <!-- Icon Divider -->
-      <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
+      <div class="divider-custom-line"></div>
+    </div>
 
       <!-- Portfolio Grid Items -->
       <div class="row">
@@ -674,15 +650,105 @@
       </div>
   </section>
 
+  <!-- Projects Section -->
+  <section class="page-section bg-secondary text-white mb-0" id="projects">
+    <div class="container">
+      <h2 class="page-section-heading text-center mb-0"
+        style="color: #1abc9c; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); padding: 15px; font-family: 'Arial', sans-serif;">
+        Projects
+      </h2>
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2 class="title">Projects développé Durant la Formation</h2>
+          <p class="lead justified-text">
+            <strong><span style="color: #1abc9c;">PHP</span>  Clinique médicale :</strong><br>
+            - Permettre au client de s’enregistrer et d’ouvrir une session en tant qu’administrateur ou patient.<br>
+            - Permettre au client de prendre des rendez-vous en ligne et notifier le client par email.<br>
+            - Pouvoir changer ou annuler un rendez-vous.<br>
+            - Permettre à l’administrateur de géré les patients et les rendez-vous.
+          </p>
+        </div>
+      </div>
+      
+      
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <p class="lead justified-text">
+            <strong><span style="color: #1abc9c;">ASP.NET CORE</span>  Suivi de vol :</strong><br>
+            - Suivi des vols aériens pour le départ et l’arriver.<br>
+            -	Notifier les clients pour le vol qui a été sélectionné
+            
+          </p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <p class="lead justified-text">
+            <strong><span style="color: #1abc9c;">Spring boot (JAVA)</span>  authentification et autorisation:</strong><br>
+            - Application pour authentification et autorisation en utilisant spring security implémentation.<br>
+            -	Utilisation de postman pour le test de l’application.<br>
+            - Utilisation d’angular comme frontend.
+          </p>
+        </div>
+      </div>
+      
+     
+
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2 class="title">Projet développé  durant le travail</h2>
+          <p class="lead justified-text">
+            <strong><span style="color: #1abc9c;">LARAVEL (PHP)</span>  API Commande en ligne :</strong><br>
+            -	Permettre au client de faire des commandes en ligne.<br>
+            -	Paiement en ligne.<br>
+            -	Administration de l’API et géré la base de donnée.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <p class="lead justified-text">
+            <strong><span style="color: #1abc9c;">ANGULAR</span>  Frontend pour la Commande en ligne :</strong><br>
+          </p>
+        </div>
+      </div>
+      
+      <div>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact Section -->
   <section class="page-section bg-secondary" id="contact">
     <div class="container">
-      <h2 class="page-section-heading text-center mb-0 flashing-red" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); padding: 15px; font-family: 'Arial', sans-serif;">
-        Contact Section Pas encore implémenté
-    </h2>
-      <h2 class="page-section-heading text-center mb-0" style="color: #1abc9c; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); padding: 15px; font-family: 'Arial', sans-serif;">
+      
+      <h2 class="page-section-heading text-center mb-0"
+        style="color: #1abc9c; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); padding: 15px; font-family: 'Arial', sans-serif;">
         Contactez-moi
       </h2>
+      <h2 class="page-section-heading text-center mb-0 flashing-red"
+        style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); padding: 15px; font-family: 'Arial', sans-serif;">
+        Contact Section Pas encore implémenté
+      </h2>
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Icon Divider -->
       <div class="divider-custom">
         <div class="divider-custom-line"></div>
         <div class="divider-custom-icon">
@@ -772,14 +838,14 @@
     </div>
   </footer> -->
 
-  
+
   <section class="copyright py-4 text-center text-white">
     <div class="container">
       <small>Copyright &copy; Portfolio 2024</small>
     </div>
   </section>
 
-  
+
   <div class="scroll-to-top d-lg-none position-fixed ">
     <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
       <i class="fa fa-chevron-up"></i>
@@ -814,7 +880,8 @@
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/portfolio/cabin.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">HTML (HyperText Markup Language) est le langage de balisage standard utilisé pour créer
+                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">HTML (HyperText Markup Language)
+                  est le langage de balisage standard utilisé pour créer
                   et structurer le contenu des pages web. Il est composé d'une série de balises qui définissent la
                   structure et le contenu de la page. Les balises HTML sont utilisées pour marquer différents éléments
                   tels que les titres, les paragraphes, les liens, les images, les tableaux, etc. Le navigateur web
@@ -860,7 +927,8 @@
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/portfolio/cake.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">JavaScript est un langage de programmation utilisé pour créer des interactions
+                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">JavaScript est un langage de
+                  programmation utilisé pour créer des interactions
                   dynamiques sur les pages web. Initialement développé pour être exécuté côté client dans les
                   navigateurs web, JavaScript est devenu un langage polyvalent utilisé également côté serveur (Node.js)
                   et pour le développement d'applications mobiles et de bureau. Il est souvent utilisé pour manipuler le
@@ -906,7 +974,8 @@
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/portfolio/circus.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">CSS (Cascading Style Sheets) est un langage de feuilles de style utilisé pour styliser
+                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">CSS (Cascading Style Sheets) est
+                  un langage de feuilles de style utilisé pour styliser
                   et formater le contenu HTML des pages web. Il permet de contrôler l'apparence visuelle des éléments
                   HTML en définissant des règles de style pour différents éléments, tels que la couleur, la police de
                   caractères, la taille, la mise en page, etc. Les règles CSS sont appliquées en cascade, ce qui
@@ -1000,7 +1069,8 @@
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/portfolio/safe.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">Vue.js est un framework JavaScript open-source, utilisé pour créer des interfaces
+                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">Vue.js est un framework
+                  JavaScript open-source, utilisé pour créer des interfaces
                   utilisateur interactives et réactives. Il est conçu pour être simple et flexible, permettant aux
                   développeurs de créer des applications web évolutives de manière efficace. Vue.js se concentre sur la
                   création de composants réutilisables et offre un système de liaison de données bidirectionnelle, une
@@ -1047,7 +1117,8 @@
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">Angular est un framework JavaScript open-source développé par Google, utilisé pour créer
+                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">Angular est un framework
+                  JavaScript open-source développé par Google, utilisé pour créer
                   des applications web front-end dynamiques et réactives. Il est basé sur le langage TypeScript et suit
                   le modèle de conception MVC (Modèle-Vue-Contrôleur) pour organiser et structurer le code de manière
                   modulaire et maintenable. Angular offre une multitude de fonctionnalités, notamment la liaison de
@@ -1093,7 +1164,8 @@
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">Java est un langage de programmation polyvalent, orienté objet et multiplateforme,
+                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">Java est un langage de
+                  programmation polyvalent, orienté objet et multiplateforme,
                   développé par Sun Microsystems (acquise par Oracle Corporation). Il est largement utilisé pour le
                   développement d'applications logicielles, notamment les applications web, les applications mobiles,
                   les applications de bureau, les systèmes embarqués, et bien plus encore. Java se distingue par sa
@@ -1140,7 +1212,8 @@
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">PHP (Hypertext Preprocessor) est un langage de programmation de scripts open-source,
+                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">PHP (Hypertext Preprocessor) est
+                  un langage de programmation de scripts open-source,
                   principalement utilisé pour le développement web côté serveur. Il est largement utilisé pour créer des
                   sites web dynamiques et des applications web interactives. PHP est intégré dans le code HTML et peut
                   être utilisé pour générer du contenu dynamique, se connecter à des bases de données, traiter les
@@ -1185,7 +1258,8 @@
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">Laravel est un framework de développement web open-source écrit en PHP, qui offre une
+                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">Laravel est un framework de
+                  développement web open-source écrit en PHP, qui offre une
                   architecture élégante et expressive pour la création d'applications web modernes et performantes. Il
                   propose une gamme complète de fonctionnalités, notamment la gestion des routes, la gestion des bases
                   de données, l'authentification utilisateur, le traitement des formulaires, la génération de vues, et
@@ -1231,7 +1305,8 @@
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">Spring Boot est un framework open-source pour le développement d'applications Java basé
+                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">Spring Boot est un framework
+                  open-source pour le développement d'applications Java basé
                   sur le framework Spring. Il vise à simplifier le processus de création d'applications Java en
                   fournissant des fonctionnalités et des configurations par défaut, réduisant ainsi la quantité de code
                   boilerplate nécessaire. Spring Boot facilite la création d'applications autonomes, prêtes à l'emploi,
@@ -1278,7 +1353,8 @@
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">Git est un système de contrôle de version distribué, largement utilisé pour le suivi des
+                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">Git est un système de contrôle
+                  de version distribué, largement utilisé pour le suivi des
                   modifications apportées au code source lors du développement logiciel. Il permet aux développeurs de
                   collaborer sur des projets, de suivre l'historique des modifications, de gérer les branches de
                   développement, et de revenir à des versions antérieures du code si nécessaire. Git est conçu pour être
@@ -1324,7 +1400,8 @@
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">Bitbucket est une plateforme de gestion de code source basée sur Git, offrant des
+                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">Bitbucket est une plateforme de
+                  gestion de code source basée sur Git, offrant des
                   fonctionnalités de contrôle de version et de collaboration pour les équipes de développement logiciel.
                   Développé par Atlassian, Bitbucket permet aux développeurs de stocker, gérer et partager leur code
                   source, ainsi que de suivre les modifications apportées au code à travers des commits, des branches et
@@ -1370,7 +1447,8 @@
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">GitHub est une plateforme de développement logiciel basée sur Git, qui permet aux
+                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">GitHub est une plateforme de
+                  développement logiciel basée sur Git, qui permet aux
                   développeurs de collaborer sur des projets, de partager du code source, et de gérer les versions de
                   leurs logiciels. Il offre des fonctionnalités de contrôle de version, telles que le suivi des
                   modifications, la gestion des branches et des pull requests, ainsi que des outils de collaboration,
@@ -1415,7 +1493,8 @@
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">Docker est une plateforme open-source de conteneurisation qui permet aux développeurs de
+                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">Docker est une plateforme
+                  open-source de conteneurisation qui permet aux développeurs de
                   créer, déployer et exécuter des applications de manière portable et légère. En utilisant des
                   conteneurs, Docker isole les applications et leurs dépendances du système hôte, ce qui simplifie le
                   déploiement et la gestion des applications sur différentes infrastructures. Docker fournit des outils
@@ -1462,7 +1541,8 @@
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">Jira Scrum est une méthode de gestion de projet agile utilisant le logiciel Jira pour la
+                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">Jira Scrum est une méthode de
+                  gestion de projet agile utilisant le logiciel Jira pour la
                   gestion des tâches et le suivi de l'avancement. Il s'appuie sur les principes du développement agile,
                   en particulier la méthode Scrum, pour organiser et exécuter les projets logiciels de manière itérative
                   et collaborative. Jira Scrum permet de créer et de gérer des backlogs de produits, de planifier et
@@ -1508,7 +1588,8 @@
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">CI/CD, ou Intégration Continue / Livraison Continue, est une pratique de développement
+                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">CI/CD, ou Intégration Continue /
+                  Livraison Continue, est une pratique de développement
                   logiciel visant à automatiser et à accélérer le processus de livraison d'applications.
 
                   L'intégration continue (CI) consiste à fusionner régulièrement le code source dans un référentiel
@@ -1566,7 +1647,10 @@
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">ASP.NET est un framework de développement web open-source créé par Microsoft, qui permet de construire des applications web dynamiques et interactives. Il fait partie du .NET Framework et est conçu pour créer des sites web, des services web, et des applications web robustes.</p>
+                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">ASP.NET est un framework de
+                  développement web open-source créé par Microsoft, qui permet de construire des applications web
+                  dynamiques et interactives. Il fait partie du .NET Framework et est conçu pour créer des sites web,
+                  des services web, et des applications web robustes.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
@@ -1605,7 +1689,10 @@
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">C# (prononcé "C sharp") est un langage de programmation orienté objet développé par Microsoft dans le cadre de sa plateforme .NET. Il a été conçu pour être simple, moderne, et polyvalent, avec une syntaxe inspirée de langages comme C, C++, et Java.</p>
+                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">C# (prononcé "C sharp") est un
+                  langage de programmation orienté objet développé par Microsoft dans le cadre de sa plateforme .NET. Il
+                  a été conçu pour être simple, moderne, et polyvalent, avec une syntaxe inspirée de langages comme C,
+                  C++, et Java.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
@@ -1644,7 +1731,10 @@
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">SQL Server, ou Microsoft SQL Server, est un système de gestion de base de données relationnelle (SGBDR) développé par Microsoft. Il est utilisé pour stocker, gérer et récupérer des données à partir de diverses applications logicielles, qu'elles soient installées sur des machines locales ou hébergées dans le cloud.</p>
+                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">SQL Server, ou Microsoft SQL
+                  Server, est un système de gestion de base de données relationnelle (SGBDR) développé par Microsoft. Il
+                  est utilisé pour stocker, gérer et récupérer des données à partir de diverses applications
+                  logicielles, qu'elles soient installées sur des machines locales ou hébergées dans le cloud.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
@@ -1683,7 +1773,10 @@
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">MySQL est un système de gestion de base de données relationnelle (SGBDR) open-source qui est très populaire pour le développement d'applications web et d'autres types d'applications nécessitant une gestion efficace des données. MySQL est connu pour sa fiabilité, sa performance, et sa simplicité d'utilisation.</p>
+                <p style="font-size: 20px; font-family: 'Georgia', serif;" class="mb-5">MySQL est un système de gestion
+                  de base de données relationnelle (SGBDR) open-source qui est très populaire pour le développement
+                  d'applications web et d'autres types d'applications nécessitant une gestion efficace des données.
+                  MySQL est connu pour sa fiabilité, sa performance, et sa simplicité d'utilisation.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
