@@ -1,14 +1,22 @@
-language:      node_js
-git:
-  depth:       3
-node_js:
-  - "node"
-install:       npm install
+language: minimal
+
+branches:
+  only:
+    - main  # or the branch you want to deploy from
+
+install:
+  - echo "No dependencies to install"
+
 script:
-  - npm test
-  - gulp
-cache:
-  directories:
-    - node_modules
-notifications:
-  email:       false
+  - echo "No build step needed"
+
+before_deploy:
+  - sudo apt-get update
+  - sudo apt-get install lftp
+
+deploy:
+  provider: script
+  script: lftp -e "set ftp:ssl-allow no; mirror -R ./ sitemirror; quit" -u $if0_37117609,$Skikda1970  ftp://$ftpupload.net
+  skip_cleanup: true
+  on:
+    branch: main
