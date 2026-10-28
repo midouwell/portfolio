@@ -98,10 +98,12 @@
       button.classList.toggle('active', active);
       button.setAttribute('aria-pressed', String(active));
     });
+    document.dispatchEvent(new CustomEvent('portfolio-language-change', { detail: { language } }));
   }
 
   const originalFrench = new Map();
   function saveFrench(element) {
+    if (!element) return;
     if (!originalFrench.has(element) && !element.dataset.i18n) originalFrench.set(element, element.innerHTML);
   }
 
@@ -207,6 +209,11 @@
     localStorage.setItem('portfolioLanguage', language);
     applyTranslations(language);
   }));
+
+  window.PortfolioI18n = {
+    getTechnologyDescription: name => technologyDescriptions[name] || null,
+    getLanguage: () => document.documentElement.lang === 'en' ? 'en' : 'fr'
+  };
 
   if (document.readyState !== 'loading') applyTranslations(initialLanguage);
 })();

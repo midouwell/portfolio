@@ -747,6 +747,75 @@ h1 em {
     line-height: 1.8;
   }
 }
+body.modal-open { overflow: hidden; }
+.skill-card { position: relative; }
+.technology-icon-button {
+  position: absolute;
+  inset: -1px;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 16px;
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+  z-index: 2;
+}
+.skill-card:has(.technology-icon-button:hover) { transform: translateY(-5px); box-shadow: var(--shadow); border-color: #b9cdc5; }
+.technology-icon-button:focus-visible { outline: 3px solid var(--mint); outline-offset: 4px; }
+.technology-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(2, 6, 23, 0.78);
+  backdrop-filter: blur(8px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+.technology-modal.is-open { opacity: 1; visibility: visible; }
+.technology-modal__panel {
+  position: relative;
+  width: min(620px, 100%);
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+  padding: 36px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: #1e293b;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+  transform: translateY(12px) scale(0.98);
+  transition: transform 0.2s ease;
+}
+.technology-modal.is-open .technology-modal__panel { transform: translateY(0) scale(1); }
+.technology-modal__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--ink);
+  cursor: pointer;
+}
+.technology-modal__close:focus-visible { outline: 3px solid var(--mint); outline-offset: 3px; }
+.technology-modal__logo { width: 96px; height: 96px; object-fit: contain; margin-bottom: 20px; }
+.technology-modal__eyebrow { margin: 0 0 6px; color: var(--green); font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.technology-modal__panel h2 { margin-bottom: 14px; font-size: 32px; }
+.technology-modal__description { margin: 0; color: #cbd5e1; line-height: 1.75; }
+@media (max-width: 600px) {
+  .technology-modal { padding: 12px; }
+  .technology-modal__panel { max-height: calc(100vh - 24px); padding: 28px 22px 22px; }
+  .technology-modal__logo { width: 78px; height: 78px; }
+}
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
